@@ -1,0 +1,73 @@
+/*app*/
+#app {
+  font-family: Lato;
+}
+/*posts*/
+#posts {
+  box-sizing: border-box;
+  padding: 0.85rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: rgb(82, 108, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 60vw;
+}
+/*card*/
+.card {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 1px 1px 3px rgb(82, 108, 129);
+}
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+.info-span {
+  padding: 0.25rem;
+  color: gray;
+  font-size: 70%;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.info {
+  padding: 0.3rem;
+}
+/*form*/
+#form {
+  max-width: 350px;
+  background-color: rgb(230, 208, 255);
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 1.5rem 0.65rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+}
+input,
+textarea {
+  border-radius: 5px;
+  padding: 0.45rem;
+  border: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.3rem 0;
+  border-radius: 5px;
+  color: white;
+  transition: transform 0.25s linear;
+  background-color: rgb(82, 108, 129);
+}
+button:active {
+  transform: scale(0.95);
+}
