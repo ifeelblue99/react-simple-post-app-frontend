@@ -19,6 +19,8 @@
 }
 /*card*/
 .card {
+  height: 350px;
+  border-radius: 5px;
   width: 200px;
   display: flex;
   justify-content: space-between;
@@ -26,6 +28,9 @@
   box-shadow: 1px 1px 3px rgb(82, 108, 129);
 }
 .card img {
+  height: 100px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   width: 100%;
   object-fit: cover;
 }
