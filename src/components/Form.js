@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style';
+import encodeImage from '../lib/encodeImage';
 
 export default function Form() {
   const [formData, setFormData] = React.useState({
@@ -8,8 +9,10 @@ export default function Form() {
     content: '',
     author: '',
   });
-  function handleChange(element) {
-    const { name, value } = element.target;
+  async function handleChange(element) {
+    const { name, value, type, files } = element.target;
+    const encodedUrl = await encodeImage(files[0]);
+    console.log(encodedUrl);
     setFormData((prevDdata) => {
       return {
         ...prevDdata,
