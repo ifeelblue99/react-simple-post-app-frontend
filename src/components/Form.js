@@ -1,4 +1,3 @@
-import { application } from 'express';
 import React from 'react';
 import '../style.css';
 
